@@ -6,14 +6,20 @@
 *.user
 *.sln.docstates
 
+# keep test files
+!VisualStudioFileParser.Test/resources/VisualStudioFileParser/BIN
+!VisualStudioFileParser.Test/resources/VisualStudioFileParser/BIN/DEBUG/
+
 # Build results
-[Dd]ebug/
+*/bin/*
+!VisualStudioFileParser.Test/resources/VisualStudioFileParser/BIN/DEBUG/
+*/bin/Debug/*
+*/bin/Release/*
+!VisualStudioFileParser.Test/resources/VisualStudioFileParser/BIN/DEBUG/*
 [Dd]ebugPublic/
-[Rr]elease/
 x64/
 build/
 bld/
-[Bb]in/
 [Oo]bj/
 
 # MSTest test Results
